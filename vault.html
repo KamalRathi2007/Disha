@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secret Vault 🔒</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PASSWORD SCREEN -->
+<div id="login" class="vault-login">
+  <h1 class="title">Secret Vault 🔒</h1>
+  <input type="password" id="password" placeholder="Enter Password">
+  <button onclick="checkPassword()">Enter</button>
+</div>
+
+<!-- VAULT CONTENT -->
+<div id="vaultContent" style="display:none;">
+
+  <h1 class="title">Our Secret Vault 💖</h1>
+  <a href="index.html" class="back">⬅ Back</a>
+
+  <div class="vault">
+
+    <div class="vault-item">
+      <img src="IMG_20231112_202805_667.jpg">
+      <div class="vault-text">
+        <h2>That Beautiful Day 🌸</h2>
+        <p>Write your special hidden memory here...</p>
+      </div>
+    </div>
+
+    <div class="vault-item">
+      <img src="IMG-20231113-WA0049.jpg">
+      <div class="vault-text">
+        <h2>Private Moment ✨</h2>
+        <p>This is something only you want to remember...</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+function checkPassword() {
+  const pass = document.getElementById("password").value;
+
+  if(pass === "2911") {
+    document.getElementById("login").style.display = "none";
+    document.getElementById("vaultContent").style.display = "block";
+  } else {
+    alert("Wrong Password 💔");
+  }
+}
+</script>
+
+</body>
+</html>
