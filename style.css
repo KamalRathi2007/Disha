@@ -20,7 +20,7 @@ body {
 
 .title {
   font-family: 'Great Vibes', cursive;
-  font-size: 3.5em;
+  font-size: 3.2em;
   margin-top: 20px;
 }
 
@@ -119,62 +119,81 @@ footer {
   text-decoration: none;
 }
 
-/* ================= PHOTO GALLERY (VERTICAL) ================= */
+/* ================= PHOTO ALBUM ================= */
 .gallery {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 25px;
-  padding: 20px;
+  gap: 20px;
+  padding: 10px;
 }
 
 .gallery img {
-  width: 90%;
-  max-width: 350px;
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+
   border-radius: 20px;
   transition: 0.4s;
   box-shadow: 0 0 15px rgba(255, 77, 109, 0.3);
 }
 
 .gallery img:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   box-shadow: 0 0 25px #ff4d6d;
 }
 
 /* ================= DIARY ================= */
 .diary {
-  padding: 20px;
+  padding: 15px;
 }
 
+/* Card layout */
 .entry {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
   position: relative;
-  background: rgba(255,255,255,0.1);
-  margin: 25px;
-  padding: 20px;
+  background: rgba(255,255,255,0.08);
+  margin: 20px 10px;
+  padding: 15px;
   border-radius: 15px;
+
   text-align: left;
+  backdrop-filter: blur(10px);
 }
 
-/* Bigger readable text */
-.entry p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* Smaller centered images */
+/* Image left */
 .entry img {
-  width: 60%;
-  max-width: 300px;
-  display: block;
-  margin: 15px auto 0;
-  border-radius: 10px;
+  width: 130px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
 }
 
-/* Date in top-right corner */
+/* Text section */
+.entry .text {
+  flex: 1;
+}
+
+/* Title */
+.entry h2 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+}
+
+/* Paragraph */
+.entry p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Date */
 .date {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 14px;
+  top: 8px;
+  right: 12px;
+  font-size: 12px;
   color: #ff99ac;
 }
