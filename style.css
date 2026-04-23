@@ -142,20 +142,36 @@ footer {
   box-shadow: 0 0 20px #ff4d6d;
 }
 
-/* Diary */
-.diary {
-  padding: 20px;
-}
-
+/* Diary improvements */
 .entry {
+  position: relative;
   background: rgba(255,255,255,0.1);
-  margin: 20px;
-  padding: 15px;
+  margin: 25px;
+  padding: 20px;
   border-radius: 15px;
+  text-align: left;
 }
 
+/* Bigger text */
+.entry p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Smaller images */
 .entry img {
-  width: 100%;
+  width: 60%;
+  max-width: 300px;
+  display: block;
+  margin: 15px auto 0;
   border-radius: 10px;
-  margin-top: 10px;
-}  
+}
+
+/* Date in corner */
+.date {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 14px;
+  color: #ff99ac;
+}
