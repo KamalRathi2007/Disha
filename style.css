@@ -258,3 +258,34 @@ footer {
   font-size: 16px;
   line-height: 1.5;
 }
+/* ================= VOICE SECTION ================= */
+.voice {
+  padding: 15px;
+}
+
+/* Card */
+.voice-item {
+  background: rgba(255,255,255,0.08);
+  margin: 20px 10px;
+  padding: 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+
+  text-align: left;
+}
+
+/* Audio player */
+.voice-item audio {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.voice-text h2 {
+  margin: 5px 0;
+}
+
+.voice-text p {
+  font-size: 15px;
+  color: #ddd;
+}
